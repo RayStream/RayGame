@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "RayGame"
-  s.version = "0.1.0"
+  s.version = "3.0.0"
   s.summary = "RayVision Cloud Game SDK"
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"cxm"=>"caixuemin@rayvision.com"}
