@@ -5,6 +5,7 @@ Pod::Spec.new do |s|
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"cxm"=>"caixuemin@rayvision.com"}
   s.homepage = "https://github.com/RayStream/RayGame"
+  s.source = { :git => 'https://github.com/RayStream/RayGame.git', :tag => s.version.to_s }
   s.frameworks = ["UIKit", "Foundation", "GameController", "VideoToolbox"]
   s.source = { :path => '.' }
   s.resources = ['ios/RayGame.framework/Versions/A/Resources/*.{png,json,xib,storyboard}']
