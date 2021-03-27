@@ -7,7 +7,6 @@ Pod::Spec.new do |s|
   s.homepage = "https://github.com/RayStream/RayGame"
   s.source = { :git => 'https://github.com/RayStream/RayGame.git', :tag => s.version.to_s }
   s.frameworks = ["UIKit", "Foundation", "GameController", "VideoToolbox", "AVFoundation", "CoreMedia", "AudioToolbox"]
-  s.source = { :path => '.' }
   s.resources = ['ios/RayGame.framework/Versions/A/Resources/*.{png,json,xib,storyboard}']
   s.pod_target_xcconfig = {
     'VALID_ARCHS' => 'x86_64 arm64 armv7'
