@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RGGameMenuButton">
+            <connections>
+                <outlet property="contentView" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="52" height="62"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKE-oR-de0">
+                    <rect key="frame" x="0.0" y="0.0" width="52" height="62"/>
+                    <subviews>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKt-dx-uxK">
+                            <rect key="frame" x="0.0" y="0.0" width="52" height="62"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
+                            </accessibility>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="52" id="S3w-4z-YaW"/>
+                                <constraint firstAttribute="height" constant="62" id="qFJ-Zg-iMh"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="game_menu_logo_bg"/>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_menu_logo" translatesAutoresizingMaskIntoConstraints="NO" id="DMB-Nk-uNQ">
+                            <rect key="frame" x="8" y="8" width="36.5" height="36"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="lKt-dx-uxK" secondAttribute="bottom" id="OnL-gx-Cr4"/>
+                        <constraint firstItem="lKt-dx-uxK" firstAttribute="centerX" secondItem="DMB-Nk-uNQ" secondAttribute="centerX" id="P34-qD-MMu"/>
+                        <constraint firstItem="DMB-Nk-uNQ" firstAttribute="top" secondItem="lKt-dx-uxK" secondAttribute="top" constant="8" id="QiC-R9-BoI"/>
+                        <constraint firstItem="lKt-dx-uxK" firstAttribute="top" secondItem="rKE-oR-de0" secondAttribute="top" id="UKi-qz-HgV"/>
+                        <constraint firstAttribute="trailing" secondItem="lKt-dx-uxK" secondAttribute="trailing" id="aUx-lr-jlN"/>
+                        <constraint firstItem="lKt-dx-uxK" firstAttribute="leading" secondItem="rKE-oR-de0" secondAttribute="leading" id="odn-Of-eTZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rKE-oR-de0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EYw-pe-Qm8"/>
+                <constraint firstAttribute="bottom" secondItem="rKE-oR-de0" secondAttribute="bottom" id="HHu-qy-LQz"/>
+                <constraint firstItem="rKE-oR-de0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="d3q-WZ-ZF4"/>
+                <constraint firstAttribute="trailing" secondItem="rKE-oR-de0" secondAttribute="trailing" id="faW-JR-2DA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-233.33333333333334" y="-111.83035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="game_menu_logo" width="36.5" height="36"/>
+        <image name="game_menu_logo_bg" width="52" height="60"/>
+    </resources>
+</document>

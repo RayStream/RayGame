@@ -1,0 +1,6 @@
+framework module RayGame {
+  umbrella header "RayGame.h"
+
+  export *
+  module * { export * }
+}

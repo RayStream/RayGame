@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RGNumberPadBoardView">
+            <connections>
+                <outlet property="contentView" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="_buttons" destination="q4Q-JY-uwt" id="7RL-DO-eDK"/>
+                <outletCollection property="_buttons" destination="WQB-AP-hXg" id="m9I-kA-2a2"/>
+                <outletCollection property="_buttons" destination="OgM-tW-Mfv" id="3uF-1F-pex"/>
+                <outletCollection property="_buttons" destination="gfS-1W-Tc0" id="Htj-Zk-0H2"/>
+                <outletCollection property="_buttons" destination="u31-mc-zCH" id="h1d-an-2V1"/>
+                <outletCollection property="_buttons" destination="OAH-Db-fSa" id="rWx-cd-MdF"/>
+                <outletCollection property="_buttons" destination="j0n-5t-xTk" id="gAS-3c-p4C"/>
+                <outletCollection property="_buttons" destination="KT0-Dk-UGT" id="XKf-iB-VZi"/>
+                <outletCollection property="_buttons" destination="Nga-uE-hBb" id="zga-wc-riV"/>
+                <outletCollection property="_buttons" destination="HQo-Ec-V7D" id="c9f-ng-osm"/>
+                <outletCollection property="_buttons" destination="EDT-Di-w6i" id="55g-B6-kD6"/>
+                <outletCollection property="_buttons" destination="Mem-an-jio" id="5H3-1t-FBK"/>
+                <outletCollection property="_buttons" destination="ZAe-3h-AUY" id="BEq-nw-v8U"/>
+                <outletCollection property="_buttons" destination="LeS-w3-1xs" id="ed5-Dn-yPG"/>
+                <outletCollection property="_buttons" destination="af3-ff-Z8W" id="CJf-Rh-XLM"/>
+                <outletCollection property="_buttons" destination="tku-tA-6z0" id="QyW-t5-BxY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="4VN-SC-zXD">
+                    <rect key="frame" x="197" y="47" width="206" height="106"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="hwo-0R-4zr">
+                            <rect key="frame" x="0.0" y="0.0" width="206" height="25"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4Q-JY-uwt" customClass="RGCommonButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="25"/>
+                                    <color key="backgroundColor" red="0.14509803921568626" green="0.1764705882352941" blue="0.22745098039215686" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="uxf-B4-bMw"/>
+                                        <constraint firstAttribute="width" constant="50" id="yte-bm-wyL"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="/"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyBoardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="showName" value="/"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="code" value="111"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQB-AP-hXg" customClass="RGCommonButton">
+                                    <rect key="frame" x="52" y="0.0" width="50" height="25"/>
+                                    <color key="backgroundColor" red="0.14509803921568626" green="0.1764705882352941" blue="0.22745098039215686" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="Tgk-gL-Gnw"/>
+                                        <constraint firstAttribute="width" constant="50" id="laN-VK-n1R"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="*"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyBoardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="showName" value="*"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="code" value="106"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgM-tW-Mfv" customClass="RGCommonButton">
+                                    <rect key="frame" x="104" y="0.0" width="50" height="25"/>
+                                    <color key="backgroundColor" red="0.14509803921568626" green="0.1764705882352941" blue="0.22745098039215686" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="Fvx-wn-hPE"/>
+                                        <constraint firstAttribute="width" constant="50" id="WgF-lt-LwK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="-"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyBoardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="showName" value="-"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="code" value="109"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfS-1W-Tc0" customClass="RGCommonButton">
+                                    <rect key="frame" x="156" y="0.0" width="50" height="25"/>
+                                    <color key="backgroundColor" red="0.14509803921568626" green="0.1764705882352941" blue="0.22745098039215686" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="Dzb-QA-ZQ2"/>
+                                        <constraint firstAttribute="width" constant="50" id="osR-UK-uMZ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="="/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyBoardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="showName" value="="/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="code" value="13"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="sHQ-E0-EEn">
+                            <rect key="frame" x="0.0" y="27" width="206" height="25"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u31-mc-zCH" customClass="RGCommonButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="25"/>
+                                    <color key="backgroundColor" red="0.14509803921568626" green="0.1764705882352941" blue="0.22745098039215686" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="1mW-VQ-yvR"/>
+                                        <constraint firstAttribute="height" constant="25" id="j9U-E8-9AG"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="."/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyBoardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="showName" value="."/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="code" value="108"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAH-Db-fSa" customClass="RGCommonButton">
+                                    <rect key="frame" x="52" y="0.0" width="50" height="25"/>
+                                    <color key="backgroundColor" red="0.14509803921568626" green="0.1764705882352941" blue="0.22745098039215686" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="4PL-gD-Jlq"/>
+                                        <constraint firstAttribute="height" constant="25" id="Lgx-nv-zzp"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="7"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyBoardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="showName" value="7"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="code" value="103"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0n-5t-xTk" customClass="RGCommonButton">
+                                    <rect key="frame" x="104" y="0.0" width="50" height="25"/>
+                                    <color key="backgroundColor" red="0.14509803921568626" green="0.1764705882352941" blue="0.22745098039215686" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="bhA-Yl-4k5"/>
+                                        <constraint firstAttribute="height" constant="25" id="wFX-Ki-fSg"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="8"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyBoardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="showName" value="8"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="code" value="104"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KT0-Dk-UGT" customClass="RGCommonButton">
+                                    <rect key="frame" x="156" y="0.0" width="50" height="25"/>
+                                    <color key="backgroundColor" red="0.14509803921568626" green="0.1764705882352941" blue="0.22745098039215686" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="1JG-xG-BTG"/>
+                                        <constraint firstAttribute="height" constant="25" id="O51-HW-xow"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="9"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyBoardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="showName" value="9"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="code" value="105"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="FMe-tq-08b">
+                            <rect key="frame" x="0.0" y="54" width="206" height="25"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQo-Ec-V7D" customClass="RGCommonButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="25"/>
+                                    <color key="backgroundColor" red="0.14509803921568626" green="0.1764705882352941" blue="0.22745098039215686" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="7jz-MI-mLF"/>
+                                        <constraint firstAttribute="height" constant="25" id="Hir-b4-yoB"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="Enter"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyBoardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="showName" value="Enter"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="code" value="13"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nga-uE-hBb" customClass="RGCommonButton">
+                                    <rect key="frame" x="52" y="0.0" width="50" height="25"/>
+                                    <color key="backgroundColor" red="0.14509803921568626" green="0.1764705882352941" blue="0.22745098039215686" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="AhF-na-W0F"/>
+                                        <constraint firstAttribute="height" constant="25" id="vzX-Hm-K1e"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="4"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyBoardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="showName" value="4"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="code" value="100"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDT-Di-w6i" customClass="RGCommonButton">
+                                    <rect key="frame" x="104" y="0.0" width="50" height="25"/>
+                                    <color key="backgroundColor" red="0.14509803921568626" green="0.1764705882352941" blue="0.22745098039215686" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="in8-Om-ZKK"/>
+                                        <constraint firstAttribute="width" constant="50" id="kz7-NW-F4V"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="5"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyBoardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="showName" value="5"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="code" value="101"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mem-an-jio" customClass="RGCommonButton">
+                                    <rect key="frame" x="156" y="0.0" width="50" height="25"/>
+                                    <color key="backgroundColor" red="0.14509803921568626" green="0.1764705882352941" blue="0.22745098039215686" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="Qad-R9-yTa"/>
+                                        <constraint firstAttribute="width" constant="50" id="ckE-6m-Vti"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="6"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyBoardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="showName" value="6"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="code" value="102"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="l1a-Wo-thd">
+                            <rect key="frame" x="0.0" y="81" width="206" height="25"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAe-3h-AUY" customClass="RGCommonButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="25"/>
+                                    <color key="backgroundColor" red="0.14509803921568626" green="0.1764705882352941" blue="0.22745098039215686" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="4UB-1V-vaj"/>
+                                        <constraint firstAttribute="width" constant="50" id="NLW-jV-w6L"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="0"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyBoardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="showName" value="0"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="code" value="96"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeS-w3-1xs" customClass="RGCommonButton">
+                                    <rect key="frame" x="52" y="0.0" width="50" height="25"/>
+                                    <color key="backgroundColor" red="0.14509803921568626" green="0.1764705882352941" blue="0.22745098039215686" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="JSk-Fr-ru6"/>
+                                        <constraint firstAttribute="width" constant="50" id="iko-ZX-POc"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="1"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyBoardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="showName" value="1"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="code" value="97"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="af3-ff-Z8W" customClass="RGCommonButton">
+                                    <rect key="frame" x="104" y="0.0" width="50" height="25"/>
+                                    <color key="backgroundColor" red="0.14509803921568626" green="0.1764705882352941" blue="0.22745098039215686" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="OlD-YB-9Jz"/>
+                                        <constraint firstAttribute="height" constant="25" id="UKf-nm-TC2"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="2"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyBoardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="showName" value="2"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="code" value="98"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tku-tA-6z0" customClass="RGCommonButton">
+                                    <rect key="frame" x="156" y="0.0" width="50" height="25"/>
+                                    <color key="backgroundColor" red="0.14509803921568626" green="0.1764705882352941" blue="0.22745098039215686" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="3MD-YU-fvd"/>
+                                        <constraint firstAttribute="height" constant="25" id="Wjk-I1-0zf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="3"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyBoardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="showName" value="3"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="code" value="99"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4VN-SC-zXD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1TU-4I-qTO"/>
+                <constraint firstItem="4VN-SC-zXD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="VlF-Df-pVk"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="19" y="2"/>
+        </view>
+    </objects>
+</document>
