@@ -12,6 +12,9 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target    = '10.0'
   s.ios.vendored_framework   = 'ios/RayGame.framework'
+
+  s.static_framework = true
+
   s.dependency 'YYModel'
   s.dependency 'AFNetworking'
   s.dependency 'Reachability'
