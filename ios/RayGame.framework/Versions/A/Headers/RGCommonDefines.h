@@ -8,7 +8,12 @@
 #ifndef RGCommonDefines_h
 #define RGCommonDefines_h
 
+#if RayGameUseSource
 #define RayGameBundle [NSBundle bundleForClass:self.class]
+#else
+#define RayGameBundle [NSBundle bundleWithURL:[[NSBundle bundleForClass:self.class] URLForResource:@"RayGame" withExtension:@"bundle"]]
+#endif
+
 #define RayGameImage(name) [UIImage imageNamed:name inBundle:RayGameBundle compatibleWithTraitCollection:nil]
 
 /// 屏幕的高度
