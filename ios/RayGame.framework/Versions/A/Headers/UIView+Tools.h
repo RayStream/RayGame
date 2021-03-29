@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign, readonly) UIEdgeInsets rg_safeAreaInsets;
 
-- (void)loadFromNib;
+- (void)rg_loadFromNib;
 
 - (void)roundCorners:(CACornerMask)corners radius:(CGFloat)radius;
 
